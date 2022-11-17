@@ -1,0 +1,80 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #222;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.time-btn {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.change-container {
+    display: none;
+    align-items: center;
+}
+
+.show {
+    display: flex;
+}
+
+.time-input {
+    outline: none;
+    margin: 20px;
+}
+
+.confirm-btn {
+    width: 100px;
+    height: 30px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.slide {
+    width: 500px;
+    height: auto;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide-img {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.slide-text {
+    font-size: 14px;
+    font-weight: 200;
+    color: white;
+}
