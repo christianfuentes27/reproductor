@@ -1,6 +1,4 @@
 import {Player} from "./player.js";
-import { Animation } from "./animation.js";
-
 
 let player = {
     "time": 5,
@@ -23,5 +21,3 @@ let player = {
 
 let p = new Player();
 p.init(player);
-let animation = new Animation();
-animation.go();

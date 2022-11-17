@@ -1,3 +1,5 @@
+import { Animation } from "./animation.js";
+
 class Player {
     constructor() {
         this.time = null;
@@ -7,6 +9,8 @@ class Player {
         this.currentSlide;
         this.slideshow;
         this.interval;
+        this.animation = new Animation();
+        this.animation.setTimeline();
     }
 
     init(player) {
@@ -62,6 +66,7 @@ class Player {
         if (this.slideshow.length != this.index) {
             this.oldSlide.style.display = "none";
             this.currentSlide.style.display = "flex";
+            this.animation.slideAnimation(this.currentSlide);
         } else {
             clearInterval(this.interval);
         }
